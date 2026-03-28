@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="{% static 'css/payment.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container-pay">
+        <h1>Complete Your Payment</h1>
+
+        <!-- Payment form -->
+        <form method="post" id="paymentForm" action="">
+            {% csrf_token %}
+            <div class="user-details">
+                <label for="user_name">Name:</label>
+                <input type="text" id="user_name" name="user_name" required>
+
+                <label for="user_email">Email:</label>
+                <input type="email" id="user_email" name="user_email" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required min="1">
+            </div>
+
+            <div class="payment-methods">
+                <h2>Choose a Payment Method:</h2>
+                <label class="payment-option">
+                    <input type="radio" name="payment_method" value="credit_card" required>
+                    <i class="fas fa-credit-card"></i> Credit Card
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment_method" value="paypal">
+                    <i class="fab fa-paypal"></i> PayPal
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="payment_method" value="bank_transfer">
+                    <i class="fas fa-university"></i> Bank Transfer
+                </label>
+            </div>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.payment-option').forEach(option => {
+            option.addEventListener('click', () => {
+                document.querySelectorAll('.payment-option').forEach(el => {
+                    el.style.backgroundColor = ''; // Reset color
+                });
+                option.style.backgroundColor = '#d4edda'; // Highlight selected option
+            });
+        });
+
+        document.getElementById('paymentForm').addEventListener('submit', function(event) {
+            // Remove this line if you want to submit to server and show success message afterward
+            // event.preventDefault(); 
+
+            // Assuming the form will be processed on the server
+            // For demonstration purposes, we will simulate a successful response
+            setTimeout(() => {
+                document.getElementById('success-message').classList.remove('hidden');
+                setTimeout(() => {
+                    window.location.href = "{% url 'index' %}"; // Replace 'index' with your home URL name
+                }, 2000); // Redirect after 2 seconds
+            }, 500); // Simulate processing delay
+        });
+    </script>
+</body>
+</html>
+
+

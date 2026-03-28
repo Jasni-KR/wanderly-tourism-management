@@ -1,0 +1,95 @@
+body {
+    background-image: url(../img/card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container-pay {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.user-details label, .user-details input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.user-details input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-option input {
+    display: none;
+}
+
+.payment-option i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #86B817;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#success-message {
+    margin-top: 20px;
+    color: #28a745;
+    text-align: center;
+}
+
+.container-pay h1 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #86B817;
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+

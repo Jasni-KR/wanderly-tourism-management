@@ -1,0 +1,12 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bookevent.css' %}">
+</head>
+
+<p class="attraction-sentence">Join us for an unforgettable experience! Reserve your spot today and be part of something special.</p>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit Booking</button>
+</form> 
