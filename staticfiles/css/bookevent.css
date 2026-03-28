@@ -1,0 +1,60 @@
+/* Styling the form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Changed to white background */
+    border: 5px solid #161515;
+    border-radius: 8px;
+}
+
+/* Styling the form inputs and textarea */
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Add a border to the table of form fields */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+form table, form th, form td {
+    border: 1px solid #131212;
+}
+
+form th, form td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Adding a hover effect to table rows */
+form tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling the submit button */
+form button {
+    background-color: #86B817;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+.attraction-sentence {
+    font-style: italic;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+
+

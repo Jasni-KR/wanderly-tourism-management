@@ -1,0 +1,90 @@
+<!-- styling the code-->
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-style: inherit;
+        background: url(../img/cloud.jpg) no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      .destination-container {
+        background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+        padding: 2em;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+      }
+      
+      .destination-container h2 {
+        color: #333;
+        margin-bottom: 1em;
+      }
+      
+      .destination-form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .destination-form label {
+        color: #3d3b3b;
+        font-weight: bold;
+        margin-top: 1em;
+      }
+      
+      .destination-form input,
+      .destination-form select {
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 0.5em;
+        font-size: 1em;
+      }
+      
+      .destination-form button {
+        margin-top: 1.5em;
+        padding: 0.75em;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        background-color:#86B817;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .destination-form button:hover {
+        background-color:rgb(5, 121, 5);
+      }
+
+      .destination-container h1 {
+        font-size: 2em;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-bottom: 3px solid #86B817;
+        padding-bottom: 0.2em;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+
+      .intro {
+        margin-bottom: 20px;
+        font-size: 1.1em;
+        color: #555;
+        font-style: italic;
+    }
+
+   
